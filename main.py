@@ -16,8 +16,7 @@ options = [
    # Define window size here
     "--window-size=1200,1200",
     "--ignore-certificate-errors"
- 
-    #"--headless",
+    "--headless",
     #"--window-size=1920,1200",
     #"--ignore-certificate-errors",
     #"--disable-extensions",
