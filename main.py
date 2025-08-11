@@ -21,7 +21,7 @@ options = [
     #"--ignore-certificate-errors",
     #"--disable-extensions",
     # These flags BELOW are recommended for stability when running Chrome in headless or containerized environments (such as GitHub Actions).
-    "--disable-gpu",
+    "--disable-gpu"
     #"--no-sandbox",
     #"--disable-dev-shm-usage",
     #'--remote-debugging-port=9222'
