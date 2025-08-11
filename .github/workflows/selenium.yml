@@ -22,7 +22,7 @@ jobs:
       - name: Install xvfb
         run: sudo apt-get install xvfb
       - name: Check connectivity
-        run: curl 'https://rendezvous.permisconduire.be/public/start'
+        run: curl -vvv 'https://rendezvous.permisconduire.be/public/start'
       - name: Running the Python script
         run: python main.py
         
