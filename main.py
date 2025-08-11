@@ -4,12 +4,16 @@ from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
 display = Display(visible=0, size=(800, 800))  
+
+print("Start display...")
 display.start()
 
+print("Install Chromedriver...")
 chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
                                       # and if it doesn't exist, download it automatically,
                                       # then add chromedriver to path
 
+print("Set driver options...")
 chrome_options = webdriver.ChromeOptions()
 # Add your options as needed
 options = [
@@ -29,7 +33,7 @@ options = [
 for option in options:
     chrome_options.add_argument(option)
 
-    
+print("Start driver...")    
 driver = webdriver.Chrome(options = chrome_options)
 
 driver.get("https://rendezvous.permisconduire.be/public/start")
