@@ -36,5 +36,5 @@ for option in options:
 print("Start driver...")    
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get("https://rendezvous.permisconduire.be/public/start")
+driver.get("https://www.github.com")
 print(driver.title)
