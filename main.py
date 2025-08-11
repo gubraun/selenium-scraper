@@ -14,8 +14,8 @@ chrome_options = webdriver.ChromeOptions()
 # Add your options as needed
 options = [
    # Define window size here
-    #"--window-size=1200,1200",
-    #"--ignore-certificate-errors"
+    "--window-size=1200,1200",
+    "--ignore-certificate-errors"
     #"--headless",
     #"--window-size=1920,1200",
     #"--ignore-certificate-errors",
@@ -23,8 +23,8 @@ options = [
     # These flags BELOW are recommended for stability when running Chrome in headless or containerized environments (such as GitHub Actions).
     "--disable-gpu",
     "--no-sandbox"
-    #"--disable-dev-shm-usage",
-    #'--remote-debugging-port=9222'
+    "--disable-dev-shm-usage",
+    '--remote-debugging-port=9222'
 ]
 for option in options:
     chrome_options.add_argument(option)
