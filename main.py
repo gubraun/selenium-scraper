@@ -36,5 +36,6 @@ for option in options:
 print("Start driver...")    
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get("https://www.github.com")
+#driver.get("https://www.github.com")
+driver.get("https://www.autosecurite.com")
 print(driver.title)
